@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>RegistrarMaestro</title>
+    <title>RegistrarUsuario</title>
   </head>
   <body>
   	<?php echo view('header'); ?>
@@ -18,22 +18,22 @@
   	<div class="container">
 		<div class=" row justify-content-md-center">
 			<div class="alert alert-succes" role ="alert">
-				<p>Registrar a un nuevo Maestro:</p>
+				<p>Registrate como nuevo usuario:</p>
 			</div>
 		</div>
 	</div>
 
   
     <br>
-    <form method="POST" action="../Home/insertarForm">
+    <form method="POST" action="../Home/insertarusuario">
     <center>
     	
-    		Nombre: <input type="text"  id="nombre" required="true" name="nombre" placeholder="nombre del maestro"><br>
-			Foto:  <input type="text" id="nombre" required="true" name="foto" placeholder="foto.png or foto.jpg"><br>
+    		Nombre: <input type="text"  id="nombre" required="true" name="nombre" placeholder="nombre de usuario"><br>
+			  password:  <input type="text" id="password" required="true" name="password" placeholder="password "><br>
 	</center>
 			<br>
 			<!--<button type="submit" class="btn btn-primary mb-3" >Registrar maestro</button>-->
-			<center><button type="submit" class="btn btn-success">Registrar Maestro</button></center>
+			<center><button type="submit" class="btn btn-success">Registrar Usuario</button></center>
 	</form>
 
     <!-- Optional JavaScript; choose one of the two! -->
